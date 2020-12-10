@@ -12,9 +12,17 @@
   <div class="content">
     <h1>入会申し込み</h1> <!--styleはどのタグにでもつけられるグローバル属性という marginはショートハンドプロパティという-->
     <p>入会するには、次のフォームに必要事項をご記入ください</p> <!-- 最後のセミコロンを省略できる14px;→14px　-->
-    <p>メールアドレス: <input type="email", name= "mymail"></p> <!-- typeは空だとtextを指定する。nameは必須 valueでデフォルト値を指定できる。inputタグのような内容を持たない要素のことを空要素という　-->
-    <p>パスワード: <input type="password", name= "password"></p>　
-    <button type= "submit">登録する</button>　<!--新しい -->
+    <div class="control">
+      <label for="mymail">メールアドレス</label> 
+      <input id= "mymail" type="email", name= "mymail"><!-- typeは空だとtextを指定する。nameは必須 valueでデフォルト値を指定できる。inputタグのような内容を持たない要素のことを空要素という　-->
+    </div>
+    <div class="control">
+      <label for="password">パスワード
+      <input id="password", type="password", name= "password"></p>　
+    </div>
+    <div class="control">
+      <button type= "submit">登録する</button>　<!--新しい -->
+    </div>
   </div>
 </body>
 </html>
