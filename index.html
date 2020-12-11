@@ -13,11 +13,11 @@
     <h1>入会申し込み</h1> <!--styleはどのタグにでもつけられるグローバル属性という marginはショートハンドプロパティという-->
     <p>入会するには、次のフォームに必要事項をご記入ください</p> <!-- 最後のセミコロンを省略できる14px;→14px　-->
     <div class="control">
-      <label for="mymail">メールアドレス</label> 
-      <input id= "mymail" type="email", name= "mymail"><!-- typeは空だとtextを指定する。nameは必須 valueでデフォルト値を指定できる。inputタグのような内容を持たない要素のことを空要素という　-->
+      <label for="mymail">メールアドレス  <span class="required">必須</span></label> 
+      <input id= "mymail" type="email", name= "mymail">  <!-- typeは空だとtextを指定する。nameは必須 valueでデフォルト値を指定できる。inputタグのような内容を持たない要素のことを空要素という　-->
     </div>
     <div class="control">
-      <label for="password">パスワード
+      <label for="password">パスワード  <span class="required">必須</span></label> 
       <input id="password", type="password", name= "password"></p>　
     </div>
     <div class="control">
